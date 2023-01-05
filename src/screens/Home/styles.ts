@@ -35,8 +35,8 @@ export const styles = StyleSheet.create({
       height: 56,
       borderRadius: 5,
       backgroundColor: '#31CF67',
-      alignItems: 'center', //alinha na horizontal
-      justifyContent: 'center' //alinha na vertical
+      alignItems: 'center', //alinha ao centro na horizontal
+      justifyContent: 'center' //alinha aocentro na vertical
     },
     form: {
       flexDirection: "row",
