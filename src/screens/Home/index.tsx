@@ -50,7 +50,7 @@ export default function Home() {
           style={styles.input}
           placeholder="Nome do participante"
           placeholderTextColor="#6b6b6b"
-          onChangeText={(text) => setParticipantName(text)}
+          onChangeText={setParticipantName}
           value={participantName}
         />
         <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
