@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import {
   Text,
@@ -12,28 +13,18 @@ import Participant from '../../components/Participant';
 import { styles } from './styles';
 
 export default function Home() {
-  const participants = [
-    'Eduardo',
-    'Roberta',
-    'Guto',
-    'Maria Roberta',
-    'Eduarda',
-    'Roberto',
-    'Guta',
-    'Mario Roberto',
-    'Teste 1',
-    'Joao',
-    'Maria',
-  ];
+  const [participants, setParticipants] = useState<string[]>([]);
+  const [participantName, setParticipantName] = useState('');
 
   const handleParticipantAdd = () => {
-    if (participants.includes('Guto')) {
+    if (participants.includes(participantName)) {
       return Alert.alert(
         'Participante existe',
         'Já existe um(a) participante na lista com esse nome'
       );
     }
-    console.log('Você clicou no botão de adicionar');
+    setParticipants((prevState) => [...prevState, participantName]);
+    setParticipantName('');
   };
 
   const handleParticipantRemove = (name: string) => {
@@ -59,6 +50,8 @@ export default function Home() {
           style={styles.input}
           placeholder="Nome do participante"
           placeholderTextColor="#6b6b6b"
+          onChangeText={(text) => setParticipantName(text)}
+          value={participantName}
         />
         <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
           <Text style={styles.buttonText}>+</Text>
