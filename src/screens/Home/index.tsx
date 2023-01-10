@@ -23,6 +23,12 @@ export default function Home() {
         'Já existe um(a) participante na lista com esse nome'
       );
     }
+    if (participantName === '') {
+      return Alert.alert(
+        'Erro',
+        'Você deve preencher o campo com um nome válido'
+      );
+    }
     setParticipants((prevState) => [...prevState, participantName]);
     setParticipantName('');
   };
