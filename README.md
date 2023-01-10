@@ -4,6 +4,7 @@ In this project, i had to create an basic app to show some skills in React-Nativ
 - Remove Participant
 - Managing States
 - Using Flatlist to handle a list
+- Handling errors.
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/47367373/211587184-f04b6d17-a26e-4114-b248-55be0440a436.gif)
 
