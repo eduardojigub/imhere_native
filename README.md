@@ -7,9 +7,9 @@ In this project, i had to create an basic app to show some skills in React-Nativ
 - Handling errors.
 
 How to run the project: 
-`clone the project`
-run `yarn start`
-run `npx expo start`
+`clone the project` /
+run `yarn start` /
+then run `npx expo start`. 
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/47367373/211587184-f04b6d17-a26e-4114-b248-55be0440a436.gif)
 
