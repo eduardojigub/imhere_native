@@ -31,14 +31,16 @@ export default function Home() {
     Alert.alert('Remover', `Deseja remover o(a) participante ${name} ?`, [
       {
         text: 'Sim',
-        onPress: () => Alert.alert('Participante removido!'),
+        onPress: () =>
+          setParticipants((prevState) =>
+            prevState.filter((participant) => participant !== name)
+          ),
       },
       {
         text: 'Não',
         style: 'cancel',
       },
     ]);
-    console.log('Clicou para remover');
   };
 
   return (
