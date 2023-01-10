@@ -2,6 +2,8 @@ In this challenge, we had to create an app to show some skills in React-Native w
 
 - Add a new Participant
 - Remove Participant
+- Managing States
+- Using Flatlist
 
 ![Screenshot_1673362170](https://user-images.githubusercontent.com/47367373/211584502-8faf613b-ac28-4c44-98c8-c7fd629778d3.png)
 ![Screenshot_1673362189](https://user-images.githubusercontent.com/47367373/211584510-aed897a6-7821-409b-8777-a4aaa825aa97.png)
