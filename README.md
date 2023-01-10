@@ -1,4 +1,4 @@
-In this challenge, we had to create an app to show some skills in React-Native with Expo
+In this project, i had to create an basic app to show some skills in React-Native with Expo
 
 - Add a new Participant
 - Remove Participant
